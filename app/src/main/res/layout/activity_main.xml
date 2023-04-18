@@ -27,8 +27,6 @@
         android:layout_marginTop="16dp"
         android:hint="Digite sua altura "/>
 
-/// leandro
-
     <Button
         android:id="@+id/btnCalcular"
         android:text="Calcular"

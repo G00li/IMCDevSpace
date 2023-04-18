@@ -22,25 +22,22 @@ class ResultActivity : AppCompatActivity() {
       para ser apresentado ao usuario
      */
 
-    var classificacao ="Classificação: "
-
-        if(result<18.5f){
-            classificacao +="ABAIXO DO PESO"
+    val classificacao = if (result < 18.5f){
+            "ABAIXO DO PESO"
         }
-        else if(result >= 18.5f && result <= 24.9){
-            classificacao="NORMAL"
+        else if (result in 18.5f..24.9f){
+            "NORMAL"
         }
-        else if (result >=25f && result<=29.9f){
-            classificacao +="SOBREPESO I"
-
+        else if (result in 25f..29.9f){
+            "SOBREPESO I"
         }
-        else if(result >=30f && result <=39.9f){
-            classificacao += "OBESIDADE II"
+        else if (result in 30f..39.9f){
+            "OBESIDADE II"
         }
         else{
-            classificacao +="OBESIDADE GRAVE III"
+            "OBESIDADE GRAVE III"
         }
 
-    tvClassificacao.text = classificacao
+    tvClassificacao.text = getString(R.string.message_classificacao, classificacao)
     }
 }
