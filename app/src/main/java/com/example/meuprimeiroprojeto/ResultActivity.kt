@@ -2,13 +2,18 @@ package com.example.meuprimeiroprojeto
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.TextView
-import org.w3c.dom.Text
+
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        supportActionBar?.setHomeButtonEnabled(true)  // Habilita o botão no app
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)   //Mostra o botão
+
 
         val tvResult = findViewById<TextView>(R.id.textview_result)
         val tvClassificacao = findViewById<TextView>(R.id.textview_classificacao)
@@ -39,5 +44,10 @@ class ResultActivity : AppCompatActivity() {
         }
 
     tvClassificacao.text = getString(R.string.message_classificacao, classificacao)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        finish() //Necessário encerrar a tela atual. Já que nao será mais preciso
+        return super.onOptionsItemSelected(item) //Ação de trocar de tela.
     }
 }

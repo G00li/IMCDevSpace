@@ -12,6 +12,7 @@
         android:id="@+id/edittext_peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:hint="Digite seu peso "
         android:inputType="numberDecimal"/>
 
@@ -24,8 +25,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edittext_peso"
-        android:layout_marginTop="16dp"
-        android:hint="Digite sua altura "/>
+        android:layout_marginTop="2dp"
+        android:hint="Digite sua altura "
+        />
 
     <Button
         android:id="@+id/btnCalcular"
