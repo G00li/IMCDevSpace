@@ -4,7 +4,7 @@ Aplicativo onde te permite, com apenas 3 clicks, descobrir qual o seu Índice de
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/result/Tela1App.png" width="260">&emsp;<img src="/result/Tela2App.png" width="260">&emsp;<img src="/result/Tela3App.png" width="260">
+<img src="/result/Tela1App.png" width="260">&emsp;<img src="/result/Tela2App.png" width="260">&emsp;<img src="/result/Tela4App.png" width="260">
 
 ## :computer: Tecnologias
 * Kotlin
