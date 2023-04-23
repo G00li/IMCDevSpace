@@ -8,7 +8,7 @@
     android:orientation="vertical">
     
     <TextView
-        android:textColor="@color/teal_200"
+        android:textColor="@color/purple_200"
         android:layout_marginTop="13dp"
         android:text="Seu IMC é: "
         android:textStyle="bold"
