@@ -42,11 +42,10 @@ class MainActivity : AppCompatActivity() {
                 basta usar a Chave definida (EXTRA_RESULT) na outra tela.  */
 
                     }
-                startActivity(intent) //Toma a atitude de trocar da tela 1 para a tela 2
+                
             }
-            else{                       //Caso algum campo esteja vazio.
-                   Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_LONG).show()    //mostrar uma mensagem flutuante no app, caso algum campo nao seja preenchido.
-
+                
+  
             }
         }
 
